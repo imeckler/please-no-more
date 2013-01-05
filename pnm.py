@@ -34,7 +34,7 @@ class Culler (FileSystemEventHandler):
         os.remove(path)
 
     def _rm_rand(self, path):
-        pront(random_elt(os.path.join(d, f)
+        os.remove(random_elt(os.path.join(d, f)
             for d, dirs, fs in os.walk(self.watch_dir)
             for f in fs))
 
